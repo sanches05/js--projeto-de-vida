@@ -1,4 +1,4 @@
-<!DOCTYPE html>More actions
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -7,23 +7,48 @@
     <title>Meus objetivos do ano</title>
     <link rel="stylesheet" href="style.css">
 </head>
+const caixaPrincipal = document.querySelector(".caixa-principal");
+const caixaPerguntas = document.querySelector(".caixa-perguntas");
+const caixaAlternativas = document.querySelector(".caixa-alternativas");
+const caixaResultado = document.querySelector(".caixa-resultado");
+const textoResultado = document.querySelector(".texto-resultado");
 
+const perguntas = [
+    {
+        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        alternativas: [
+            {
+                texto: "Isso é assustador!",
+                afirmacao: "afirmação"
+            },
+            {
+                texto: "Isso é maravilhoso!" ,
+                afirmacao: "afirmação" 
+            }
+            
+        ]
+    },
+    {
+        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial (IA), uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        alternativas: [
+            {
+             
 <body>
     <section class="conteudo-principal">
-               <h2 class="titulo-principal">Meus objetivos do ano<span>_</span></h2>Add commentMore actions
+        <h2 class="titulo-principal">Meus objetivos do ano<span>_</span></h2>
         <div class="conteudo">
             <div class="botoes">
                 <button class="botao ativo">Cursos na Alura</button>
                 <button class="botao">Criar projetos em Javascript</button>
-                <button class="botao">Criar um portfolio</button>
-                <button class="botao">Atualizar meu currículo</button>
+                <button class="botao">Criar uma página pessoal</button>
+                <button class="botao">Fechar notas da sala</button>
             </div>
             <div class="abas-textos">
                 <div class="aba-conteudo ativo">
                     <h3 class="aba-conteudo-titulo-principal">Estudar 4 cursos na Alura</h3>
                     <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
                     <div class="contador">
-                                                <div class="contador-digito">Add commentMore actions
+                        <div class="contador-digito">
                             <p class="contador-digito-numero" id="dias0"></p>
                             <p class="contador-digito-texto">dias</p>
                         </div>
@@ -35,8 +60,8 @@
                             <p class="contador-digito-numero" id="min0"></p>
                             <p class="contador-digito-texto">min</p>
                         </div>
-                        <div class="contador-digito">Add commentMore actions
-                            <p class="contador-digito-numero" id="seg0"></p>Add commentMore actions
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="seg0"></p>
                             <p class="contador-digito-texto">seg</p>
                         </div>
                     </div>
@@ -47,9 +72,9 @@
                     <div class="contador">
                         <div class="contador-digito">
                             <p class="contador-digito-numero" id="dias1"></p>
-                            <p class="contador-digito-texto">dias</p>Add commentMore actions
+                            <p class="contador-digito-texto">dias</p>
                         </div>
-                                                <div class="contador-digito">Add commentMore actions
+                        <div class="contador-digito">
                             <p class="contador-digito-numero" id="horas1"></p>
                             <p class="contador-digito-texto">horas</p>
                         </div>
@@ -62,3 +87,55 @@
                             <p class="contador-digito-texto">seg</p>
                         </div>
                     </div>
+                </div>
+                <div class="aba-conteudo">
+                    <h3 class="aba-conteudo-titulo-principal">Criar página da turma</h3>
+                    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                    <div class="contador">
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="dias2"></p>
+                            <p class="contador-digito-texto">dias</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="horas2"></p>
+                            <p class="contador-digito-texto">horas</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="min2"></p>
+                            <p class="contador-digito-texto">min</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="seg2"></p>
+                            <p class="contador-digito-texto">seg</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aba-conteudo">
+                    <h3 class="aba-conteudo-titulo-principal">Atualizar meu curriculo com os certificados da Alura</h3>
+                    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                    <div class="contador">
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="dias3"></p>
+                            <p class="contador-digito-texto">dias</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="horas3"></p>
+                            <p class="contador-digito-texto">horas</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="min3"></p>
+                            <p class="contador-digito-texto">min</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="seg3"></p>
+                            <p class="contador-digito-texto">seg</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
